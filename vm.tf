@@ -1,5 +1,5 @@
-data "google_compute_image" "debian" {
-  family  = "ubuntu-1804"
+data "google_compute_image" "ubuntu-14-04-nginx-1-9-1" {
+  family  = "ubuntu"
   project = "Project2"
 }
 
