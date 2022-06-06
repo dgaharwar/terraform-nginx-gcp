@@ -12,7 +12,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = data.google_compute_image.my-image.self_link
+      image = data.google_compute_image.dgubuntu14.self_link
     }
   }
 
