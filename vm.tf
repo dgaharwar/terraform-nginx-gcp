@@ -1,5 +1,6 @@
 data "google_compute_image" "debian" {
   family  = "ubuntu-1804-lts"
+  version = "latest"
   project = "Project2"
 }
 
@@ -12,7 +13,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = data.google_compute_image.debian.self_link
+      image = "debian-cloud/debian-9"
     }
   }
 
