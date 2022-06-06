@@ -1,6 +1,6 @@
 data "google_compute_image" "dgubuntu14" {
 //  family  = "ubuntu"
-  project = "silicon-coder-316218"
+  project = "Project2"
 }
 
 # Creates a GCP VM Instance.
