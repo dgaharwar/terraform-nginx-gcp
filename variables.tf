@@ -7,7 +7,7 @@ variable "gcp_cred" {
 } 
 
 locals {
-  credential = merge(var.gcp_cred, {private_key = "${var.gcp_private_key}"}) 
+  credential = merge(var.gcp_cred, {private_key = "var.gcp_private_key"}) 
 } 
 
 variable "project_id" {
