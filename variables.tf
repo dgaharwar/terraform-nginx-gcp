@@ -26,8 +26,3 @@ variable "machine_type" {
   type        = string
   default     = "f1-micro"
 }
-
-variable "labels" {
-  description = "List of labels to attach to the VM instance."
-  type        = map
-}
