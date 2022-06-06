@@ -1,4 +1,4 @@
-project_id = "gcp-project-id" # Update: Replace with GCP Project ID.
+project_id = "silicon-coder-316218" # Update: Replace with GCP Project ID.
 labels = {
   "environment" = "test"
   "team"        = "devops"
