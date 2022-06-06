@@ -1,4 +1,4 @@
-data "google_compute_image" "ubuntu-14-04-nginx-1-9-1" {
+data "google_compute_image" "my_image" {
   family  = "ubuntu"
   project = "Project2"
 }
@@ -12,7 +12,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      image = data.google_compute_image.my_image.self_link
     }
   }
 
