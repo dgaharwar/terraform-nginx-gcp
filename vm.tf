@@ -1,4 +1,4 @@
-data "google_compute_image" "my_image" {
+data "google_compute_image" "my-image" {
   family  = "ubuntu"
   project = "Project2"
 }
@@ -12,7 +12,7 @@ resource "google_compute_instance" "vm" {
 
   boot_disk {
     initialize_params {
-      image = data.google_compute_image.my_image.self_link
+      image = data.google_compute_image.my-image.self_link
     }
   }
 
