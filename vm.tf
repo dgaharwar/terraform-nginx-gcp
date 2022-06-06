@@ -1,4 +1,4 @@
-data "google_compute_image" "my_image"
+data "google_compute_image" "my_image" {
   name    = "dgubuntu14"
 //  family  = "ubuntu"
   project = "Project2"
