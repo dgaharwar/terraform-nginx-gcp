@@ -1,6 +1,7 @@
 variable "project_id" {
   description = "Google Cloud Platform (GCP) Project ID."
   type        = string
+  default     = "silicon-coder-316218"
 }
 
 variable "region" {
