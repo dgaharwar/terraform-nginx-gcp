@@ -37,5 +37,5 @@ variable "name" {
 variable "machine_type" {
   description = "GCP VM instance machine type."
   type        = string
-  default     = "f1-micro"
+  default     = "n1-standard-1"
 }
