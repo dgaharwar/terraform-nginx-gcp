@@ -1,6 +1,5 @@
 data "google_compute_image" "debian" {
-  family  = "ubuntu-1804-lts"
-  version = "latest"
+  family  = "ubuntu-1804"
   project = "Project2"
 }
 
